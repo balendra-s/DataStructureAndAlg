@@ -1,9 +1,9 @@
-public class NodeTest{
+public class Node {
     private int value;
-    private NodeTest leftChild;
-    private NodeTest rightChild;
+    private Node leftChild;
+    private Node rightChild;
 
-    public NodeTest(int value){
+    public Node(int value){
         this.value = value;
     }
 
@@ -11,11 +11,11 @@ public class NodeTest{
         this.value = value;
     }
 
-    public void setLeftChild(NodeTest leftChild) {
+    public void setLeftChild(Node leftChild) {
         this.leftChild = leftChild;
     }
 
-    public void setRightChild(NodeTest rightChild) {
+    public void setRightChild(Node rightChild) {
         this.rightChild = rightChild;
     }
 
@@ -23,11 +23,11 @@ public class NodeTest{
         return value;
     }
 
-    public NodeTest getLeftChild() {
+    public Node getLeftChild() {
         return leftChild;
     }
 
-    public NodeTest getRightChild() {
+    public Node getRightChild() {
         return rightChild;
     }
 

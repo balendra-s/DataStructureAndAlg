@@ -2,6 +2,19 @@ import java.util.Arrays;
 
 public class Sorting {
 
+    private static void insertionSort(int[] numbers){
+        for(int i = 1;i<numbers.length;i++){
+            int current = numbers[i];
+            int j= i-1;
+            while( j >= 0 && current < numbers[j]) {
+                numbers[j + 1] = numbers[j];
+                j--;
+            }
+            numbers[j+1]= current;
+            }
+    }
+
+
     private static void selectionSort(int[] numbers){
         for(int i=0;i<numbers.length;i++){
             int minIndex = i;
@@ -34,7 +47,7 @@ public class Sorting {
 
     public static void main(String[] args) {
         int[] numbers = new int[]{10, 9, 8, 7, 6, 5, 4, 3, 1,2};
-        Sorting.selectionSort(numbers);
+        Sorting.insertionSort(numbers);
         System.out.println(Arrays.toString(numbers));
 
 

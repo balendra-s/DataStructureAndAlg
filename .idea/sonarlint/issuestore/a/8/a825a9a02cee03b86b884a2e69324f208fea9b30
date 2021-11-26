@@ -1,0 +1,15 @@
+
+s	java:S135
+"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
+d
+java:S2259b"BA "NullPointerException" could be thrown; "last" is nullable here.(Å—•Áùÿÿÿÿ8ĞÔïÓ/
+Z	java:S106b"9Replace this use of System.out or System.err by a logger.(Å—•Áùÿÿÿÿ8Ã›ÔïÓ/
+N	java:S106r"9Replace this use of System.out or System.err by a logger.(”ë¦
+S	java:S106t"9Replace this use of System.out or System.err by a logger.(Ø½åÔúÿÿÿÿ
+U	java:S106C"9Replace this use of System.out or System.err by a logger.(‹àü¥8·™†íÓ/
+Y	java:S125€"<This block of commented-out lines of code should be removed.(’ÜÚ¹8’íÎîÓ/
+U	java:S106X"9Replace this use of System.out or System.err by a logger.(à“–¡8şÓ½ïÓ/
+N	java:S106s"9Replace this use of System.out or System.err by a logger.(ÚàÄ·
+N	java:S106-"9Replace this use of System.out or System.err by a logger.(ü½–î
+U	java:S1069"9Replace this use of System.out or System.err by a logger.(‹àü¥8·™†íÓ/
+Z	java:S106H"9Replace this use of System.out or System.err by a logger.(”ÿá€ÿÿÿÿÿ8¬şÁîÓ/

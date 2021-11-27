@@ -14,7 +14,15 @@ public class Sorting {
             }
     }
 
-
+    /**
+     * It selects the first item as the minimum,
+     * compares it with the rest av list and
+     * finds the minimum and moves it to the "sorted array".
+     * Then checks the last number in the sorted array
+     * with the unsorted array and find a minimum.
+     * Then it repeats, until everything is sorted.
+     * @param numbers numbers to be sorted
+     */
     private static void selectionSort(int[] numbers){
         for(int i=0;i<numbers.length;i++){
             int minIndex = i;
@@ -47,11 +55,7 @@ public class Sorting {
 
     public static void main(String[] args) {
         int[] numbers = new int[]{10, 9, 8, 7, 6, 5, 4, 3, 1,2};
-        Sorting.insertionSort(numbers);
+        Sorting.selectionSort(numbers);
         System.out.println(Arrays.toString(numbers));
-
-
     }
-
-
 }

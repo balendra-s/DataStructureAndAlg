@@ -9,3 +9,9 @@ M
 src/main/java/ArraysList.java,0/2/02c41cbf0614e7ddfba869bcfbba6bbae0394f86
 G
 src/main/java/Main.java,e/4/e44a8606ce010ad9b89aafdfcee2ab49afbf6d10
+M
+src/main/java/LinkedList.java,9/0/9006c3619d3a26475dd41781f8cd019d3c7d7480
+P
+ src/main/java/StackProblems.java,f/c/fcb8d98585c90fdff0cc8678c864d39702abadf8
+J
+src/main/java/Sorting.java,3/1/31abfb17d9651e8f7248994b432c6c4ce2ed4537

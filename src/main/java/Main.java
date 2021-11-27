@@ -8,20 +8,24 @@ public class Main {
         arrays.insertNewValue(30);
         arrays.insertNewValue(30);
         arrays.insertNewValue(40);
+        arrays.insertNewNumber(50);
+        arrays.insertNewValue(60);
+
+
         System.out.println(arrays.toString());
 
-        //Removing a value at the given index and rearranging the array.
-        try{
-            arrays.removeAt(0);
-            System.out.println("Removed successfully !");
-            System.out.println("After removing ....");
-            System.out.println(arrays.toString());
-        }catch (IllegalArgumentException iae){
-            System.out.println(iae.getMessage());
-        }
-
-        //Finding index of a given value.
-        arrays.indexOf(200);
+//        //Removing a value at the given index and rearranging the array.
+//        try{
+//            arrays.removeAt(0);
+//            System.out.println("Removed successfully !");
+//            System.out.println("After removing ....");
+//            System.out.println(arrays.toString());
+//        }catch (IllegalArgumentException iae){
+//            System.out.println(iae.getMessage());
+//        }
+//
+//        //Finding index of a given value.
+//        arrays.indexOf(200);
 
     }
 }

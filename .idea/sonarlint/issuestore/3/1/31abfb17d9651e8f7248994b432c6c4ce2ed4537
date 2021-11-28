@@ -1,6 +1,6 @@
 
 T
 java:S1144"2Remove this unused private "insertionSort" method.(Š… ¶ÿÿÿÿÿ8²ÄŠ˜Ö/
-U	java:S106;"9Replace this use of System.out or System.err by a logger.(Û‰Ã¡8îòÃİÕ/
 Q
 java:S1144&"/Remove this unused private "binarySort" method.(ÜŒáÿùÿÿÿÿ8ëÂşŞÕ/
+U	java:S106;"9Replace this use of System.out or System.err by a logger.(Û‰Ã¡8îòÃİÕ/

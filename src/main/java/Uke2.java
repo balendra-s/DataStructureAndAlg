@@ -2,9 +2,7 @@ import java.util.Scanner;
 
 public class Uke2 {
     public static void main(String[] args) {
-        //Uke2.sumOfThreeNumbers(4);
-        //Uke2.printTriangle(10);
-        System.out.println(Uke2.whileLoopCount(10));
+
     }
     public static void sumOfThreeNumbers(int noOfNumbersToAdd){
         int sum = 0;
@@ -24,14 +22,5 @@ public class Uke2 {
             }
             System.out.println();
         }
-    }
-
-    public static int whileLoopCount(int limit){
-
-        int i = 1;
-        while(i <= limit){
-            i++;
-        }
-        return i;
     }
 }

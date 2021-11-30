@@ -1,21 +1,26 @@
 public class Trees {
     private Node root;
 
+    /**
+     * Inserts a new node.
+     * If the root is empty, sets the node as root.
+     * @param value value to be added as new node.
+     */
     public void insertValue(int value){
-        if(root == null){
+        if(root == null){                                       // if root is empty, sets the node as root.
             this.root = new Node(value);
             return;
         }
-        Node currentNode = root;
+        Node currentNode = root;                                // gets the root as current node.
         while(true) {
-            if (value < currentNode.getValue()) {
-                if (currentNode.getLeftChild() == null) {
-                    currentNode.setLeftChild(new Node(value));
+            if (value < currentNode.getValue()) {               // if the node value is less than root,
+                if (currentNode.getLeftChild() == null) {       // sets it as left child if the left child is empty
+                    currentNode.setLeftChild(new Node(value));  // wraps the value as the node and set it as left child.
                     break;
                 }
-                currentNode = currentNode.getLeftChild();
-            } else {
-                if (currentNode.getRightChild() == null) {
+                currentNode = currentNode.getLeftChild();        // if there is left child is not null, then set
+            } else {                                             // current node to already available left child.
+                if (currentNode.getRightChild() == null) {       // continues until it finds the correct node.
                     currentNode.setRightChild(new Node(value));
                     break;
                 }
@@ -24,12 +29,18 @@ public class Trees {
         }
         }
 
-        public boolean findValue(int value){
-        Node currentNode = root;
-        while(currentNode != null){
-            if(value<currentNode.getValue())
-                currentNode= currentNode.getLeftChild();
-            else if(value > currentNode.getValue())
+    /**
+     * Checks whether the given value is in the tree.
+     * @param value value to be searched.
+     * @return true  if the value is in the tree
+     *         false if the value is not in the tree.
+     */
+    public boolean findValue(int value){
+        Node currentNode = root;                                // Get the root value
+        while(currentNode != null){                             // Breaks the loop if the node is null. i.e
+            if(value<currentNode.getValue())                    // Searched the whole tree.
+                currentNode= currentNode.getLeftChild();        // checks if the value is smaller or greater and
+            else if(value > currentNode.getValue())             // moves accordingly and returns true when found.
                 currentNode = currentNode.getRightChild();
             else
                 return true;
@@ -37,34 +48,33 @@ public class Trees {
         return false;
         }
 
-        public int factorialUsingRecursion(int limit){
-
-            if(limit == 0)
-                return 1;
-            int factResult = limit * factorialUsingRecursion(limit-1);
-            System.out.println(limit + " " + factResult);
-            return factResult;
-        }
-
-        public void traverse(){
-        traverseInOrder(root);
-        traversePreOrder(root);
-        }
+    /**
+     * Traverses the tree in "pre-order"
+     * ROOT -> LEFT -> RIGHT.
+     * @param root root node to start the traversal at
+     */
         private void traversePreOrder(Node root) {
-            if (root == null) {
+            if (root == null) {                             // base case to end the recursion.
                 return;
             }
-            System.out.println(root.getValue());
+
+            System.out.print(root.getValue() + " ");
             traversePreOrder(root.getLeftChild());
             traversePreOrder(root.getRightChild());
         }
 
-        private void traverseInOrder(Node root){
+    /**
+     * Traverses the tree in "inorder"
+     * LEFT -> ROOT -> RIGHT.
+     * @param root root node to start the traversal at
+     */
+    private void traverseInOrder(Node root){
         if(root == null){
             return;
         }
+
             traverseInOrder(root.getLeftChild());
-            System.out.println(root.getValue());
+            System.out.print(root.getValue() + " ");
             traverseInOrder(root.getRightChild());
         }
 
@@ -72,9 +82,13 @@ public class Trees {
             System.out.println(heightTree(root));
         }
 
-        // formal for height of the tree in binary search is
-        // 1 + max(leftChild,rightChild)
-        private int heightTree(Node root){
+
+    /**
+     * Returns the height of the given root.
+      * @param root Root to find the height of
+     * @return returns the height of the tree.
+     */
+    private int heightTree(Node root){
             if(root == null)
                 return -1;
             if(root.getRightChild() == null && root.getLeftChild() == null){
@@ -108,29 +122,17 @@ public class Trees {
             return Math.min(Math.min(left, right), root.getValue());
         }
 
-        public void findX(int sum){
-            int delSum = 0 ;
-            delSum = (sum - 20) / 4;
-            System.out.println("Første person får : " + delSum);
-            System.out.println("Andre person får : "+ (2*delSum));
-            System.out.println("Tredje person får : " + (delSum+20));
-        }
 
-      public static void main(String[] args) {
-        Trees trees = new Trees();
-        trees.insertValue(7);
-        trees.insertValue(4);
-        trees.insertValue(9);
-        trees.insertValue(1);
-        trees.insertValue(6);
-        trees.insertValue(8);
-        trees.insertValue(10);
-//      System.out.println(trees.findValue(11));
-//      trees.factorialUsingRecursion(10);
-//      trees.traverse();
-//      trees.heightTree();
-        trees.minimumOfTree();
-        trees.minOfBinarySearchTree();
+        public static void main(String[] args) {
+            Trees trees = new Trees();
+            trees.insertValue(7);
+            trees.insertValue(4);
+            trees.insertValue(9);
+            trees.insertValue(1);
+            trees.insertValue(6);
+            trees.insertValue(8);
+            trees.insertValue(10);
+            trees.traversePreOrder(trees.root);
 
 
     }

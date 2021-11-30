@@ -1,3 +1,4 @@
+//TODO: This class should be placed inside Trees. Because it is a implementasion detail of the Tree Class.
 public class Node {
     private int value;
     private Node leftChild;

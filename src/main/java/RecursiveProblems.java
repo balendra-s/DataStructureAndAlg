@@ -42,10 +42,17 @@ public class RecursiveProblems {
         return Math.max(numbers[index], maxOfArray(numbers, index - 1));
     }
 
+    public void printMessage(String message,int count){
+        if(count == 0){
+            return;
+        }
+        System.out.println(message);
+        printMessage(message,count - 1);
+    }
+
 
     public static void main(String[] args) {
         RecursiveProblems problems = new RecursiveProblems();
-
-        System.out.println(problems.maxOfArrayMethodTwo(new int[]{9,2,7,123},3));
+        problems.printMessage("Recursive",10);
     }
 }

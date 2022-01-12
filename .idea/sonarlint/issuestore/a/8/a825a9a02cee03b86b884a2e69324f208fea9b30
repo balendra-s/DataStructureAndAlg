@@ -1,15 +1,9 @@
 
-U	java:S1069"9Replace this use of System.out or System.err by a logger.(‹àü¥8·™†íÓ/
-s	java:S135
-"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
-N	java:S106r"9Replace this use of System.out or System.err by a logger.(”ë¦
-Z	java:S106H"9Replace this use of System.out or System.err by a logger.(”ÿá€ÿÿÿÿÿ8¬şÁîÓ/
-S	java:S106t"9Replace this use of System.out or System.err by a logger.(Ø½åÔúÿÿÿÿ
-Z	java:S106b"9Replace this use of System.out or System.err by a logger.(Å—•Áùÿÿÿÿ8Ã›ÔïÓ/
+Z	java:S106p"9Replace this use of System.out or System.err by a logger.(Å—•Áùÿÿÿÿ8Ã›ÔïÓ/
+Z	java:S106R"9Replace this use of System.out or System.err by a logger.(”ÿá€ÿÿÿÿÿ8¬şÁîÓ/
 d
-java:S2259b"BA "NullPointerException" could be thrown; "last" is nullable here.(Å—•Áùÿÿÿÿ8ĞÔïÓ/
-N	java:S106s"9Replace this use of System.out or System.err by a logger.(ÚàÄ·
-N	java:S106-"9Replace this use of System.out or System.err by a logger.(ü½–î
-U	java:S106X"9Replace this use of System.out or System.err by a logger.(à“–¡8şÓ½ïÓ/
-Y	java:S125€"<This block of commented-out lines of code should be removed.(’ÜÚ¹8’íÎîÓ/
-U	java:S106C"9Replace this use of System.out or System.err by a logger.(‹àü¥8·™†íÓ/
+java:S2259p"BA "NullPointerException" could be thrown; "last" is nullable here.(Å—•Áùÿÿÿÿ8ĞÔïÓ/
+s	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
+U	java:S106f"9Replace this use of System.out or System.err by a logger.(à“–¡8şÓ½ïÓ/
+Z	java:S106="9Replace this use of System.out or System.err by a logger.(‚Íô»üÿÿÿÿ8àŒ©§×/
+Z	java:S106M"9Replace this use of System.out or System.err by a logger.(‚Íô»üÿÿÿÿ8àŒ©§×/
